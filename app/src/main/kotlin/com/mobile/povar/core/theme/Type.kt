@@ -1,4 +1,4 @@
-package com.example.povareshacompose.ui.theme
+package com.mobile.povar.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

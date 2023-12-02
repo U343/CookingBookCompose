@@ -1,4 +1,4 @@
-package com.example.povareshacompose.ui.theme
+package com.mobile.povar.core.theme
 
 import android.app.Activity
 import android.os.Build

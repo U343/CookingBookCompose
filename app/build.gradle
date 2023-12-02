@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.povareshacompose'
+    namespace 'com.mobile.povar'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.povareshacompose"
+        applicationId "com.mobile.povar"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -47,6 +47,7 @@ android {
 }
 
 dependencies {
+    def room_version = "2.5.0"
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
@@ -63,4 +64,8 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    //room
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
 }
